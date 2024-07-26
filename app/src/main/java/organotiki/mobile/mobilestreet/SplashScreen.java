@@ -71,7 +71,7 @@ public class SplashScreen extends AppCompatActivity implements Communicator {
 
 //            Log.d("asdfg", "number of customers: "+String.valueOf(realm.where(Customer.class).count()));
 
-            final String versionNumber = "1.1.1.37";
+            final String versionNumber = "1.1.1.38";
             realm.executeTransactionAsync(new Realm.Transaction() {
                 @Override
                 public void execute(Realm realm) {
