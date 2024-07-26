@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/onlineReportsBar"
+        layout="@layout/online_reports_bar"
+        android:baselineAligned="false" />
+
+    <View
+        android:id="@+id/centerShim"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/onlineReportsBar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/textView_customer_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageButton_search_customer"
+                android:gravity="center_horizontal"
+                android:labelFor="@+id/editText_customer_code"
+                android:text="@string/cusinfo"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageButton_search_customer"
+                android:layout_toEndOf="@id/imageButton_search_customer"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_customer_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/code"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView_customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/name"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton_search_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/searchCustomer"
+                android:src="@drawable/ic_person_outline_white_48dp"
+                android:text="@string/start"
+                android:title="@string/searchCustomer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/textView_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton_from"
+                android:layout_toEndOf="@+id/imageButton_from"
+                android:labelFor="@+id/editText_from"
+                android:text="@string/from_"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/from_"
+                android:src="@drawable/ic_date_range_white_48dp"
+                android:title="@string/from_" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/textView_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton_to"
+                android:layout_toEndOf="@+id/imageButton_to"
+                android:labelFor="@+id/editText_to"
+                android:text="@string/to_"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+            <!--<EditText-->
+            <!--android:id="@+id/editText_to"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toEndOf="@+id/textView_to"-->
+            <!--android:inputType="date"-->
+            <!--android:layout_alignBottom="@+id/imageButton_to"-->
+            <!--android:layout_alignParentEnd="true"/>-->
+
+
+            <ImageButton
+                android:id="@+id/imageButton_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/to_"
+                android:src="@drawable/ic_date_range_white_48dp"
+                android:title="@string/to_" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/textView_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout_to"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/execute"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <!--<WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_start"
+        android:id="@+id/webView_report">
+
+    </WebView>-->
+
+</RelativeLayout>

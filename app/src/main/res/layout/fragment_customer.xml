@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultInvoiceType"
+        android:hint="@string/defaultInvoiceType"
+        android:id="@+id/invoiceType"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultPaymentTerm"
+        android:hint="@string/defaultPaymentTerm"
+        android:id="@+id/button_payment_term"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_customer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectedCustomer"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/textView_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/code"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView_TIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/customerTin"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/textView_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/city"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/textView_postalCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/postalCode"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView_phone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telephoneNumber"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView_phone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telephoneNumber2"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mobileNumber"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/traMessage"
+        android:textSize="18sp"/>
+		
+	<TextView 
+		android:textSize="18sp" 
+		android:id="@+id/textView_extraChargeManagementCost" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="@string/extraChargeManagementCost"/>
+
+
+</LinearLayout>

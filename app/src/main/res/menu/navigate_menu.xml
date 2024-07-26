@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/goBack"
+        android:icon="@drawable/ic_keyboard_arrow_left_white_48dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/back"/>
+    <item
+        android:id="@+id/goForward"
+        android:icon="@drawable/ic_chevron_right_white_48dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/forward"/>
+
+</menu>

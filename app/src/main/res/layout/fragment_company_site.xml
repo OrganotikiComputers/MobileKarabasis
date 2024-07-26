@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/companySite"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_alignStart="@+id/password"
+            android:layout_alignEnd="@+id/password"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/company"
+                android:id="@+id/textView_company"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:textSize="20sp"
+                android:labelFor="@+id/editText_company"
+                android:layout_marginStart="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_company"
+                android:layout_weight="3"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:layout_marginEnd="10dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout_companySite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_company"
+            android:layout_alignStart="@+id/password"
+            android:layout_alignEnd="@+id/password"
+            android:layout_marginBottom="25dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/companySite"
+                android:id="@+id/textView_companySite"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_companySite"
+                android:layout_weight="3"
+                android:singleLine="true"
+                android:layout_marginEnd="10dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_marginStart="20dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

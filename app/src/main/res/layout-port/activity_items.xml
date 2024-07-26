@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="organotiki.mobile.mobilestreet.Items"
+    android:id="@+id/drower_categories">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/itemsBar"
+            layout="@layout/items_bar" />
+
+        <fragment
+            android:id="@+id/fItems"
+            android:name="organotiki.mobile.mobilestreet.ItemGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/itemsBar"
+            tools:layout="@layout/fragment_item_grid" />
+    </RelativeLayout>
+
+
+    <fragment
+        android:id="@+id/fCategories"
+        android:name="organotiki.mobile.mobilestreet.Categories"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/itemsBar"
+        android:layout_gravity="start"
+        tools:layout="@layout/fragment_categories" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

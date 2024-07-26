@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MobileKarampasis.iml" filepath="$PROJECT_DIR$/MobileKarampasis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MobileKarampasis.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MobileKarampasis.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MobileKarampasis.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MobileKarampasis.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MobileKarampasis.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MobileKarampasis.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MobileKarampasis.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MobileKarampasis.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/volley/MobileKarampasis.volley.iml" filepath="$PROJECT_DIR$/.idea/modules/volley/MobileKarampasis.volley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/volley/MobileKarampasis.volley.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/volley/MobileKarampasis.volley.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/volley/MobileKarampasis.volley.main.iml" filepath="$PROJECT_DIR$/.idea/modules/volley/MobileKarampasis.volley.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/volley/MobileKarampasis.volley.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/volley/MobileKarampasis.volley.unitTest.iml" />
+    </modules>
+  </component>
+</project>

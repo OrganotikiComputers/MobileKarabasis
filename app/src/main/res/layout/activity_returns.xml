@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="organotiki.mobile.mobilestreet.Returns">
+
+    <include
+        android:id="@+id/returnsBar"
+        layout="@layout/returns_bar" />
+
+    <fragment
+        android:layout_below="@id/returnsBar"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:name="organotiki.mobile.mobilestreet.CustomerFragment"
+        android:id="@+id/fCustomer"
+        tools:layout="@layout/fragment_customer" />
+
+    <fragment
+        android:layout_below="@id/returnsBar"
+        android:layout_toEndOf="@+id/fCustomer"
+        android:id="@+id/fItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="organotiki.mobile.mobilestreet.ReturnsItemGrid"
+        tools:layout="@layout/fragment_returns_item_grid" />
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView_image"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/zoomIn"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logoo" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030" />
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030" />
+
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView_company"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030" />
+
+    <TextView
+        android:id="@+id/last_quantity"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="10"
+        android:gravity="end|center_vertical"
+        android:selectAllOnFocus="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="10"
+        android:gravity="end|center_vertical"
+        android:selectAllOnFocus="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="10"
+        android:gravity="end|center_vertical"
+        android:selectAllOnFocus="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030" />
+		
+	<TextView 
+		android:textSize="14sp" 
+		android:textColor="@android:color/white" 
+		android:gravity="right|center_vertical|center_horizontal|center|end"
+		android:layout_gravity="center_vertical" 
+		android:id="@+id/managementCost"
+		android:layout_width="75dp"
+		android:layout_height="50dp"
+		android:selectAllOnFocus="true" 
+		android:layout_weight="10"/>
+
+    <TextView 
+		android:background="#303030" 
+		android:layout_width="5dp" 
+		android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="10"
+        android:gravity="end|center_vertical"
+        android:selectAllOnFocus="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030" />
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkBox_guarantee"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkBox_script"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <!--<TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#303030"/>
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/document"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_weight="20"
+        android:src="@drawable/ic_note_add_white_48dp"/>-->
+</LinearLayout>

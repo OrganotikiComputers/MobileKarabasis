@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="organotiki.mobile.mobilestreet.NewOrder">
+
+   <item
+        android:id="@+id/menuItem_add_check"
+        android:visible="false"
+        android:icon="@drawable/ic_add_white_48dp"
+        android:title="@string/addCheck"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+       />
+
+    <item
+        android:id="@+id/menuItem_submit"
+        android:visible="false"
+        android:icon="@drawable/ic_check_white_48dp"
+        android:title="@string/submit"
+        android:orderInCategory="200"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/customerReport"
+        android:icon="@drawable/ic_person_pin_circle_black_48dp"
+        android:title="@string/addCheck"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+</menu>

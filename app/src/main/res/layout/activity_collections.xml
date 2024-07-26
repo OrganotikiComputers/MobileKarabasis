@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/collectionsBar"
+        layout="@layout/collections_bar"
+        android:baselineAligned="false" />
+
+    <View
+        android:id="@+id/centerShim"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_cus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/collectionsBar"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:id="@+id/centerShim1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_customer_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageButton_search_customer"
+            android:gravity="center_horizontal"
+            android:labelFor="@+id/editText_customer_code"
+            android:text="@string/cusinfo"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_cusinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton_search_customer"
+            android:layout_toEndOf="@+id/imageButton_search_customer"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_customer_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/editText_customer_code"
+                android:singleLine="true"
+                android:text="@string/code"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_customer_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/editText_customer_code"
+                android:singleLine="true"
+                android:text="@string/name"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_customer_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/editText_customer_code"
+                android:singleLine="true"
+                android:text="@string/email"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/imageButton_search_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/searchCustomer"
+            android:src="@drawable/ic_person_outline_white_48dp"
+            android:text="@string/start"
+            android:title="@string/searchCustomer" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_cus"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/textView_balances">
+
+        <TextView
+            android:id="@+id/textView_balance1_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/karampasisAEY"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_balance2_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/karampasisASY"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_balance3_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/karampasisFEY"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_balance4_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/karampasisFSY"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_balances"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_headers"
+        android:layout_marginTop="10dp"
+        android:labelFor="@+id/editText_cash"
+        android:singleLine="true"
+        android:text="@string/balances_"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_headers"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView_balances">
+
+        <TextView
+            android:id="@+id/textView_balance1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_balance2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_balance3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_balance4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_returns_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_balance"
+        android:layout_marginTop="10dp"
+        android:labelFor="@+id/editText_cash"
+        android:singleLine="true"
+        android:text="@string/returns_"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_returns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_balance"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView_balances">
+
+        <TextView
+            android:id="@+id/textView_returns1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_returns2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_returns3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_returns4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_new_balace_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_returns"
+        android:layout_marginTop="10dp"
+        android:labelFor="@+id/editText_cash"
+        android:singleLine="true"
+        android:text="@string/newBalances_"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_new_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_returns"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView_balances">
+
+        <TextView
+            android:id="@+id/textView_new_balance1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_new_balance2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_new_balance3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_new_balance4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_cash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_new_balance"
+        android:layout_marginTop="30dp"
+        android:labelFor="@+id/editText_cash"
+        android:singleLine="true"
+        android:text="@string/cash_"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_new_balance"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/textView_balances">
+
+        <EditText
+            android:id="@+id/editText_cash1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_cash2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_cash3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_cash4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout_checks"
+        android:labelFor="@+id/editText_cash"
+        android:singleLine="true"
+        android:text="@string/checks_"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_checks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_cash"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/textView_balances">
+
+        <EditText
+            android:id="@+id/button_company1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_balance1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/button_company2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_balance2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_final_balances"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_checks"
+        android:layout_marginTop="25dp"
+        android:labelFor="@+id/editText_cash"
+        android:singleLine="true"
+        android:text="@string/finalBalances_"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_final_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_checks"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/textView_balances">
+
+        <TextView
+            android:id="@+id/textView_final_balance1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_final_balance2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_final_balance3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_final_balance4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_doc_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_final_balance"
+        android:layout_marginTop="25dp"
+        android:labelFor="@+id/editText_cash"
+        android:singleLine="true"
+        android:text="@string/docNumber_"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_doc_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_final_balance"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/textView_balances">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText_doc_number1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp"
+            android:inputType="number"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText_doc_number2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp"
+            android:inputType="number"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText_doc_number3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp"
+            android:inputType="number"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText_doc_number4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="22sp"
+            android:inputType="number"/>
+    </LinearLayout>
+
+
+    <!--<Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/cancel"
+        android:layout_toStartOf="@+id/button_submit"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/submit"
+        android:textSize="20sp" />-->
+
+    <TextView
+        android:id="@+id/view_filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_doc_number" />
+
+    <TextView
+        android:id="@+id/textView_split_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_filler"
+        android:layout_alignBaseline="@+id/editText_split_cash"
+        android:text="@string/cashFromCus_"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:labelFor="@+id/editText_split_cash"/>
+    <EditText
+        android:id="@+id/editText_split_cash"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textView_split_cash"
+        android:layout_above="@+id/textView_overall_balance_title"
+        android:inputType="numberDecimal"
+        />
+    <Button
+        android:id="@+id/button_split_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/editText_split_cash"
+        android:layout_alignBaseline="@+id/editText_split_cash"
+        android:text="@string/split"/>
+
+    <TextView
+        android:id="@+id/textView_balance_formation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_submit"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView_balance_formation"
+        android:maxLines="1"
+        android:text="@string/balanceFormation_"
+        android:textAlignment="viewEnd"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView_balance_formation"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_submit"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/textView_overall_balance_title"
+        android:maxLines="1"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView_overall_balance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_submit"
+        android:layout_toStartOf="@+id/textView_overall_balance"
+        android:maxLines="1"
+        android:text="@string/overallBalance_"
+        android:textAlignment="viewEnd"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView_overall_balance"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_submit"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/textView_total_title"
+        android:maxLines="1"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView_total_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_submit"
+        android:layout_toStartOf="@+id/textView_total"
+        android:maxLines="1"
+        android:text="@string/total_"
+        android:textAlignment="viewEnd"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView_total"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_submit"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text="@string/analysis"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/button_submit"
+        android:text="@string/cancel"
+        android:textSize="18sp" />
+
+</RelativeLayout>

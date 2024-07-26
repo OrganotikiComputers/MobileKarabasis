@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    tools:context="organotiki.mobile.mobilestreet.CurrencyCalculatorFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/currencyCalculator"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_500"
+                android:text="500 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_500"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_200"
+                android:text="200 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_200"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_100"
+                android:text="100 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_50"
+                android:text="50 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_20"
+                android:text="20 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_10"
+                android:text="10 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_5"
+                android:text="5 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_2"
+                android:text="2 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_1"
+                android:text="1 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_050"
+                android:text="0,50 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_050"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_020"
+                android:text="0,20 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_020"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_010"
+                android:text="0,10 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_010"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_005"
+                android:text="0,05 x"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_005"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_check_num"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_check_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_10"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_check_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_from_checks"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_from_checks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_10"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_from_checks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_deposit"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_deposit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:labelFor="@+id/editText_10"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editText_deposit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/centerShim"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:id="@+id/textView_currency_total_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/centerShim"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:labelFor="@+id/editText_10"
+                android:maxLines="1"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView_currency_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/centerShim"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/textView_cash_total_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView_currency_total_title"
+                android:layout_toStartOf="@id/centerShim"
+                android:gravity="end"
+                android:labelFor="@+id/editText_10"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView_cash_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/textView_currency_total_title"
+                android:layout_toEndOf="@id/centerShim"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView_difference_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView_cash_total_title"
+                android:layout_toStartOf="@id/centerShim"
+                android:gravity="end"
+                android:labelFor="@+id/editText_10"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView_difference"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView_cash_total_title"
+                android:layout_toEndOf="@id/centerShim"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imageView_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView_difference"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/ok"
+                android:src="@drawable/check" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/close"
+            android:textSize="18sp" />
+
+    </LinearLayout>

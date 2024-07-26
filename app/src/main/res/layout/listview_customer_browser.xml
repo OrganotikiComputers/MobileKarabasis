@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_code"
+            android:layout_width="100dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/code"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_customer_name"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/customer"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_total"
+            android:layout_width="75dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="center_vertical|end"
+            android:singleLine="true"
+            android:text="@string/total"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_total_AEY"
+            android:layout_width="75dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_weight="10"
+            android:gravity="center_vertical|end"
+            android:singleLine="true"
+            android:text="@string/karampasisAEY"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_total_ASY"
+            android:layout_width="75dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_weight="10"
+            android:gravity="center_vertical|end"
+            android:singleLine="true"
+            android:text="@string/karampasisASY"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_total_FEY"
+            android:layout_width="75dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_weight="10"
+            android:gravity="center_vertical|end"
+            android:singleLine="true"
+            android:text="@string/karampasisFEY"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_total_FSY"
+            android:layout_width="75dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_weight="10"
+            android:gravity="center_vertical|end"
+            android:singleLine="true"
+            android:text="@string/karampasisFSY"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_city"
+            android:layout_width="75dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/city"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_coupon"
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="center_vertical|end"
+            android:singleLine="true"
+            android:text="@string/coupon"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkBox_to_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkBox_visited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

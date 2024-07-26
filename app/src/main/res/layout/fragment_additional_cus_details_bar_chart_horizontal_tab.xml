@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/scrollView_customer_info_additional_customer_details" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/inearLayout_customer_info_additional_customer_details" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton android:layout_gravity="end" android:id="@+id/button_email_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sendEmail" android:layout_alignParentEnd="true"/>
+        <com.github.mikephil.charting.charts.BarChart android:id="@+id/barChart_additional_customer_details" android:layout_width="match_parent" android:layout_height="500dp" android:layout_marginTop="10dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="20sp" android:textColor="@color/colorAccent" android:id="@+id/textView_total" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TableLayout android:orientation="vertical" android:id="@+id/tableLayout_customer_info_additional_customer_details" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

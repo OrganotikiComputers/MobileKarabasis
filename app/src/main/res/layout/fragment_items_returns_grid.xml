@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="organotiki.mobile.mobilestreet.ItemsReturnsGrid">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="@string/srch"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/codeDescAltCode"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:inputType="textVisiblePassword"/>
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/search"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/column_header1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/image"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/column_header2"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/description"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/column_header3"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/date_company"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#303030"/>
+
+        <TextView
+            android:id="@+id/column_header4"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:layout_weight="10"
+            android:text="@string/lastQuantity"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:selectAllOnFocus="true"/>
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/column_header5"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/price"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/column_header6"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/quantity"
+            android:textColor="@color/colorAccent" />
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/column_header7"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/value"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/column_header8"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/guarantee"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/column_header9"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/fromCustomer"
+            android:textColor="@color/colorAccent" />
+		<TextView 
+			android:background="#000"
+			android:layout_width="5dp" 
+			android:layout_height="match_parent"/>
+			
+        <TextView 
+			android:textColor="@color/colorAccent" 
+			android:gravity="center" 
+			android:id="@+id/column_header10"
+			android:layout_width="75dp"
+			android:layout_height="match_parent" 
+			android:text="@string/fromCustomer" 
+			android:maxLines="1"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:animationCache="true"
+        android:descendantFocusability="beforeDescendants"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true" />
+
+</FrameLayout>

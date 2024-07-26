@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/customerBrowserBar" android:baselineAligned="false" layout="@layout/customer_browser_bar"/>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="25dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header1" android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/code" android:singleLine="true" android:layout_weight="0"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header2" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/customer" android:singleLine="true" android:layout_weight="40"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header3" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/total" android:singleLine="true" android:layout_weight="10"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header4" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/karampasisAEY" android:singleLine="true" android:layout_weight="10"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header5" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/karampasisASY" android:singleLine="true" android:layout_weight="10"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header6" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/karampasisFEY" android:singleLine="true" android:layout_weight="10"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header7" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/karampasisFSY" android:singleLine="true" android:layout_weight="10"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header8" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/city" android:singleLine="true" android:layout_weight="10"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header9" android:layout_width="50dp" android:layout_height="match_parent" android:text="@string/coupon" android:singleLine="true" android:layout_weight="10"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header10" android:layout_width="50dp" android:layout_height="match_parent" android:text="@string/toVisit" android:singleLine="true" android:layout_weight="10"/>
+            <androidx.appcompat.widget.AppCompatTextView android:background="#000" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/column_header11" android:layout_width="50dp" android:layout_height="match_parent" android:text="@string/visited" android:singleLine="true" android:layout_weight="10"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <ListView android:id="@+id/listView_customers" android:animationCache="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="0dp" android:scrollingCache="true" android:layout_weight="1" android:smoothScrollbar="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_previous" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/previous" android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@+id/textView_pages" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Button android:id="@+id/button_next" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/next" android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_filter_outline_white_48dp" android:id="@+id/menuItem_filters" android:orderInCategory="100" android:title="@string/filters" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/icons8_route_48_white" android:id="@+id/menuItem_newRouting" android:orderInCategory="100" android:title="@string/newRouting" app:showAsAction="ifRoom"/>
+</menu>
